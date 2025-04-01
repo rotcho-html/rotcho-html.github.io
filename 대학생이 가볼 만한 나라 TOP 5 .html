@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대학생이 가볼 만한 나라 TOP 5</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-rows: 200px 1fr;
+            grid-template-columns: 15% 1fr 35%;
+            grid-template-areas: 
+                "header header header"
+                "nav section aside";
+            height: 900px;
+            width: 100%;
+        }
+        header {
+            grid-area: header;
+            background-color: rgb(37, 185, 37);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: #eee;
+        }
+
+        section {
+            grid-area: section;
+            background-color: blanchedalmond;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>대학생이 가볼 만한 나라 TOP 5</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#in1">일본</a></li>
+                <li><a href="#in2">태국</a></li>
+                <li><a href="#in3">베트남</a></li>
+                <li><a href="#in4">체코</a></li>
+                <li><a href="#in5">스페인</a></li>
+            </ul>
+        </nav>
+        <section>
+            <article id="in1">
+                <h3>1. 일본</h3>
+                <ul>
+                    <li>가까운 거리 & 저렴한 항공권 (LCC 항공 이용하면 왕복 20~30만 원대 가능)</li>
+                    <li>애니메이션, 전통문화, 현대적인 도시까지 다양한 경험 가능</li>
+                    <li>맛있는 음식 (라멘, 스시, 이자카야 투어 강추!)</li>
+                    <li>추천 도시: 도쿄, 오사카, 교토, 후쿠오카</li>
+                </ul>
+            </article>
+            <article id="in2">
+                <h3>2. 태국</h3>
+                <ul>
+                    <li>물가 저렴 (호캉스 & 마사지 즐기기 최고)</li>
+                    <li> 활기찬 야시장과 길거리 음식 (망고스티키라이스, 팟타이, 똠얌꿍)</li>
+                    <li>액티비티 천국 (스쿠버 다이빙, 코끼리 보호구역 방문, 롯뚜 투어)</li>
+                    <li>추천 도시: 방콕, 치앙마이, 푸껫, 파타야</li>   
+                </ul>
+            </article>
+            <article id="in3">
+                <h3>3. 베트남</h3>
+                <ul>
+                    <li>카페 투어 & 현지 음식 탐방 가능 (반미, 분짜, 쌀국수, 에그커피)</li>
+                    <li>이국적인 자연경관 (하롱베이 크루즈, 사파 트레킹)</li>
+                    <li>오토바이 투어 & 현지 로컬 문화 체험 가능</li>
+                    <li>추천 도시: 하노이, 호치민, 다낭, 호이안</li>   
+                </ul>
+            </article>
+            <article id="in4">
+                <h3>4. 체코</h3>
+                <ul>
+                    <li>유럽 여행 중 가성비 좋은 나라 (프라하 맥주 & 저렴한 물가)</li>
+                    <li>동화 속 같은 도시 분위기 (프라하 성, 까를교, 천문시계탑)</li>
+                    <li>근교 여행도 쉬움 (체스키 크룸로프, 오스트리아 비엔나 이동 가능)</li>
+                    <li>추천 도시: 프라하, 체스키 크룸로프, 브르노</li>   
+                </ul>
+            </article>
+            <article id="in5">
+                <h3>5. 스페인</h3>
+                <ul>
+                    <li>자유로운 분위기 & 예술적인 도시</li>
+                    <li>미식 여행 최적 (빠에야, 타파스, 하몽 등 먹을 게 많음)</li>
+                    <li>축구 팬이라면 성지순례 (FC 바르셀로나, 레알 마드리드 경기)</li>
+                    <li>추천 도시: 바르셀로나, 마드리드, 세비야, 발렌시아</li>   
+                </ul>
+            </article>
+            <article id="in6">
+                <h3>6. 가고 싶은 나라 선택</h3>
+                <p>가고 싶은 나라를 선택하세요.(복수선택 가능)</p>
+                <input type="checkbox" name="prefer" value="1">일본
+                <input type="checkbox" name="prefer" value="2">태국
+                <input type="checkbox" name="prefer" value="3">베트남
+                <input type="checkbox" name="prefer" value="4">체코
+                <input type="checkbox" name="prefer" value="5">스페인
+            </article>
+        </section>
+        <aside id="sample">
+            <h3>각 나라별 사진</h3>
+            <table border="1">
+                <thead>
+                    <tr><th><img src="images/일본.jpg"></th><th><img src="images/태국.jpg"></th></tr>
+                    <tr><th><img src="images/베트남.jpg"></th><th><img src="images/체코.jpg"></th></tr>
+                    <img src="images/스페인.jpg">
+                </thead>
+            </table> 
+        </aside>
+    </div>
+</body>
+</html>
